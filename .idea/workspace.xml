@@ -1,0 +1,2225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6f6168f9-6130-46f3-a231-dc1eeb0373e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/DescriptorLookupCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ModelStepLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ASTSchema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/SyntheticStageNames.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/AbstractModelASTCodeBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTArgumentList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTBranch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTBuildCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTBuildConditionsContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTBuildParameter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTBuildParameters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTClosureMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTEnvironment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTEnvironmentValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTInternalFunctionCall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTKeyValueOrMethodCallPair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTLibraries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTMarkerInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTMethodArg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTMethodCall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTNamedArgumentList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTOption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTOptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTPipelineDef.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTPositionalArgumentList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTPostBuild.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTPostStage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTScriptBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTSingleArgument.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTStage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTStageInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTStages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTTools.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTTreeStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTTrigger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTTriggers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTValue$ConstantValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTValue$GStringValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTWhen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTWhenCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTWhenContent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTWhenExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/classes/java/main/org/jenkinsci/plugins/pipeline/model/definition/validator/ModelValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/libs/pipeline-model-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/build/libs/pipeline-model-api.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/build/resources/main/org/jenkinsci/plugins/pipeline/model/definition/ast/Messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ASTSchema.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ASTSchema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/SyntheticStageNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/SyntheticStageNames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/AbstractModelASTCodeBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/AbstractModelASTCodeBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTArgumentList.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTArgumentList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTBranch.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTBranch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTBuildCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTBuildCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTBuildConditionsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTBuildConditionsContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTBuildParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTBuildParameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTBuildParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTBuildParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTClosureMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTClosureMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTEnvironment.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTEnvironment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTEnvironmentValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTEnvironmentValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTInternalFunctionCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTInternalFunctionCall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTKeyValueOrMethodCallPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTKeyValueOrMethodCallPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTLibraries.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTLibraries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTMarkerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTMarkerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTMethodArg.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTMethodArg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTMethodCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTMethodCall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTNamedArgumentList.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTNamedArgumentList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTPipelineDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTPipelineDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTPositionalArgumentList.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTPositionalArgumentList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTPostBuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTPostBuild.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTPostStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTPostStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTScriptBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTScriptBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTSingleArgument.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTSingleArgument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTStageInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTStageInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTStages.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTStages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTTreeStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTTreeStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTTrigger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTTriggers.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTTriggers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTWhen.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTWhen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTWhenCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTWhenCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTWhenContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTWhenContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/ModelASTWhenExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTWhenExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/validator/ModelValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/validator/ModelValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-api/src/main/resources/org/jenkinsci/plugins/pipeline/model/definition/ast/Messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-api/src/main/resources/org/jenkinsci/plugins/pipeline/modeldefinition/ast/Messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/com/test/HelloGroovy.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/Utils.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/Utils.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/AbstractBuildConditionResponder.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/AbstractBuildConditionResponder.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/Agent.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/Agent.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/Environment.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/Environment.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/Libraries.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/Libraries.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/MappedClosure.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/MappedClosure.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/Options.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/Options.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/Parameters.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/Parameters.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/PostBuild.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/PostBuild.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/PostStage.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/PostStage.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/Root.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/Root.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/Stage.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/Stage.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/StageConditionals.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/StageConditionals.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/StageInput.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/StageInput.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/StageOptions.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/StageOptions.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/Stages.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/Stages.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/StepsBlock.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/StepsBlock.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/Tools.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/Tools.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/Triggers.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/Triggers.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/conditions/Aborted.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/conditions/Aborted.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/conditions/Always.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/conditions/Always.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/conditions/Changed.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/conditions/Changed.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/conditions/Cleanup.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/conditions/Cleanup.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/conditions/Failure.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/conditions/Failure.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/conditions/Fixed.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/conditions/Fixed.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/conditions/NotBuilt.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/conditions/NotBuilt.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/conditions/Regression.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/conditions/Regression.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/conditions/Success.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/conditions/Success.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/conditions/Unstable.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/conditions/Unstable.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/model/conditions/Unsuccessful.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/conditions/Unsuccessful.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/parser/ASTParserUtils.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/ASTParserUtils.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/parser/BlockStatementMatch.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/BlockStatementMatch.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/parser/Converter.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/Converter.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/parser/JSONParser.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/JSONParser.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/parser/ModelParser.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/ModelParser.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/parser/ParallelMatch.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/ParallelMatch.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/parser/Parser.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/Parser.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/parser/PipelineStepFinder.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/PipelineStepFinder.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/parser/RuntimeASTTransformer.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/RuntimeASTTransformer.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/validator/ErrorCollector.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/validator/ErrorCollector.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/validator/JSONErrorCollector.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/validator/JSONErrorCollector.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/validator/ModelValidatorImpl.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/validator/ModelValidatorImpl.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/model/definition/validator/SourceUnitErrorCollector.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/validator/SourceUnitErrorCollector.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-definition/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ModelConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-definition/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ModelConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-extensions/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-extensions/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-extensions/libs/script-security-1.50.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-extensions/libs/structs-1.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-extensions/libs/workflow-cps-2.61.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline-model-extensions/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/agent/DeclarativeAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline-model-extensions/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/agent/DeclarativeAgent.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-api/.gradle/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-api/build/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-api/out/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-definition/.gradle/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-definition/build/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-definition/out/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-extension/.gradle/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-extension/build/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-extension/out/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-ta/.gradle/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-ta/build/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-ta/out/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-tags-metadata/.gradle/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-tags-metadata/build/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-tags-metadata/out/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-extensions/.gradle/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-extensions/build/" />
+    <ignored path="$PROJECT_DIR$/pipeline-model-extensions/out/" />
+    <ignored path="$PROJECT_DIR$/pipeline-stage-tags-metadata/.gradle/" />
+    <ignored path="$PROJECT_DIR$/pipeline-stage-tags-metadata/build/" />
+    <ignored path="$PROJECT_DIR$/pipeline-stage-tags-metadata/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/pipeline-model-definition">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/pipeline-model-api">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/pipeline-model-extension">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/pipeline-model-tags-metadata">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/pipeline-model-extensions">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/pipeline-stage-tags-metadata">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pipeline" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pipeline" type="f1a62948:ProjectNode" />
+                <item name="pipeline" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pipeline" type="f1a62948:ProjectNode" />
+                <item name=":pipeline-model-api" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pipeline" type="f1a62948:ProjectNode" />
+                <item name=":pipeline-model-api" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pipeline" type="f1a62948:ProjectNode" />
+                <item name=":pipeline-model-api" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pipeline" type="f1a62948:ProjectNode" />
+                <item name=":pipeline-stage-tags-metadata" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pipeline" type="f1a62948:ProjectNode" />
+                <item name=":pipeline-stage-tags-metadata" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pipeline" type="f1a62948:ProjectNode" />
+                <item name=":pipeline-stage-tags-metadata" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1940358441">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="bat" value="1" />
+          <entry key="class" value="6" />
+          <entry key="gitigore" value="1" />
+          <entry key="gradle" value="20" />
+          <entry key="gradlew" value="2" />
+          <entry key="groovy" value="26" />
+          <entry key="java" value="44" />
+          <entry key="properties" value="3" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Bash" value="2" />
+          <entry key="CLASS" value="6" />
+          <entry key="Groovy" value="46" />
+          <entry key="JAVA" value="44" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="3" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gitigore" value="18" />
+          <entry key="gradle" value="656" />
+          <entry key="groovy" value="99" />
+          <entry key="java" value="176" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="755" />
+          <entry key="JAVA" value="176" />
+          <entry key="PLAIN_TEXT" value="18" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipeline-model-definition/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ModelConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/AbstractModelASTCodeBlock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ASTSchema.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/validator/ModelValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/DescriptorLookupCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/validator/JSONErrorCollector.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/validator/SourceUnitErrorCollector.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/validator/ErrorCollector.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+              <folding>
+                <element signature="e#66#94#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>json</find>
+      <find>script-security</find>
+      <find>agent</find>
+      <find>jenkins-core</find>
+      <find>steps</find>
+      <find>script</find>
+      <find>sec</find>
+      <find>FlowInterruptedException</find>
+      <find>comp</find>
+      <find>job</find>
+      <find>CpsScript</find>
+      <find>cpsScript</find>
+      <find>ModelASTKey</find>
+      <find>CheckoutScript</find>
+      <find>cps</find>
+      <find>groovy</find>
+      <find>SerializableScript</find>
+      <find>getScript</find>
+      <find>ServletException</find>
+      <find>Extension</find>
+      <find>Messages</find>
+      <find>ToString</find>
+      <find>ModelASTBuildParameter</find>
+      <find>ModelValidatorImpl</find>
+      <find>ModelASTPipelineDef</find>
+      <find>MethodCallExpression</find>
+      <find>ModelValidator</find>
+      <find>jackson-data</find>
+      <find>jackson-core</find>
+      <find>reportFailure</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4.8" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="pipeline" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="pipeline" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":pipeline-model-api" />
+                <option name="path" value="$PROJECT_DIR$/pipeline-model-api" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":pipeline-model-definition" />
+                <option name="path" value="$PROJECT_DIR$/pipeline-model-definition" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":pipeline-model-extensions" />
+                <option name="path" value="$PROJECT_DIR$/pipeline-model-extensions" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":pipeline-stage-tags-metadata" />
+                <option name="path" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'pipeline'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'pipeline'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'pipeline'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'pipeline'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the test Groovy source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestGroovy" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'pipeline'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the main Groovy source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileGroovy" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'pipeline' (some of the displayed tasks may belong to subprojects)." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Groovydoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="groovydoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'pipeline'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'pipeline'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'pipeline'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pipeline-model-api">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':pipeline-model-api'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':pipeline-model-api'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':pipeline-model-api'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':pipeline-model-api'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':pipeline-model-api'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':pipeline-model-api'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':pipeline-model-api'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':pipeline-model-api'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':pipeline-model-api'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pipeline-model-definition">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':pipeline-model-definition'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':pipeline-model-definition'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':pipeline-model-definition'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':pipeline-model-definition'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the test Groovy source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="compileTestGroovy" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':pipeline-model-definition'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the main Groovy source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="compileGroovy" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':pipeline-model-definition'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Groovydoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="groovydoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':pipeline-model-definition'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':pipeline-model-definition'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':pipeline-model-definition'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-definition" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pipeline-model-extensions">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':pipeline-model-extensions'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':pipeline-model-extensions'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':pipeline-model-extensions'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':pipeline-model-extensions'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the test Groovy source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="compileTestGroovy" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':pipeline-model-extensions'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the main Groovy source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="compileGroovy" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':pipeline-model-extensions'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Groovydoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="groovydoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':pipeline-model-extensions'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':pipeline-model-extensions'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':pipeline-model-extensions'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pipeline-stage-tags-metadata">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':pipeline-stage-tags-metadata'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':pipeline-stage-tags-metadata'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':pipeline-stage-tags-metadata'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':pipeline-stage-tags-metadata'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':pipeline-stage-tags-metadata'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':pipeline-stage-tags-metadata'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':pipeline-stage-tags-metadata'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':pipeline-stage-tags-metadata'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':pipeline-stage-tags-metadata'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="12416980792000" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="655302627" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
+        <entry key="$PROJECT_DIR$/pipeline-model-api/build.gradle" value="2853466992" />
+        <entry key="$PROJECT_DIR$/pipeline-model-definition/build.gradle" value="1103746986" />
+        <entry key="$PROJECT_DIR$/pipeline-model-extensions/build.gradle" value="2106372241" />
+        <entry key="$PROJECT_DIR$/pipeline-stage-tags-metadata/build.gradle" value="3253328774" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="3698996385" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/pipeline-model-api">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/pipeline-model-api" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/pipeline-model-definition">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/pipeline-model-definition" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/pipeline-model-extension">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/pipeline-model-extension" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/pipeline-model-extensions">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/pipeline-model-extensions" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/pipeline-model-ta">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/pipeline-model-ta" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/pipeline-model-tags-metadata">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/pipeline-model-tags-metadata" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/pipeline-stage-tags-metadata">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="pipeline" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-cache-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-option" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/core-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/internal-android-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/internal-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/persistent-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources-gcs" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/testing-junit-platform" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/version-control" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/ant-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/ant-launcher-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-base-services-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-base-services-groovy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-build-cache-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-build-option-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-cli-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-core-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-core-api-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-docs-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-installation-beacon-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-jvm-services-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-provider-plugins-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-provider-spi-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-tooling-builders-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-tooling-models-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-launcher-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-logging-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-messaging-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-model-core-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-model-groovy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-persistent-cache-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-process-services-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-resources-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-runtime-api-info-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-tooling-api-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-wrapper-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-announce-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-antlr-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-build-cache-http-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-build-comparison-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-build-init-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-code-quality-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-composite-builds-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-dependency-management-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-diagnostics-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ear-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ide-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ide-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ide-play-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ivy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-jacoco-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-javascript-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-groovy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-java-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-jvm-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-scala-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-maven-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-osgi-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-platform-base-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-platform-jvm-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-platform-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-platform-play-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-plugin-development-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-plugin-use-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-plugins-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-publish-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-reporting-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-resources-gcs-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-resources-http-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-resources-s3-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-resources-sftp-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-scala-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-signing-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-test-kit-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-testing-base-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-testing-junit-platform-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-testing-jvm-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-testing-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-tooling-api-builders-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-version-control-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-workers-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/ivy-2.2.0.jar" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/coding-dev" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../coding-dev" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../coding-dev-devops" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../coding-dev-metrics" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ast/AbstractModelASTCodeBlock.java" />
+        <option value="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/com/test/HelloGroovy.groovy" />
+        <option value="$PROJECT_DIR$/pipeline-model-definition/src/main/java/com/java/HelloWorld.java" />
+        <option value="$PROJECT_DIR$/pipeline-model-api/build.gradle" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/pipeline-model-definition/src/main/java/org/jenkinsci/plugins/pipeline/model/definition/ModelConverter.java" />
+        <option value="$PROJECT_DIR$/pipeline-stage-tags-metadata/build.gradle" />
+        <option value="$PROJECT_DIR$/.gitigore" />
+        <option value="$PROJECT_DIR$/pipeline-model-definition/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ModelStepLoader.java" />
+        <option value="$PROJECT_DIR$/pipeline-model-extensions/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/withscript/WithScriptDescribable.java" />
+        <option value="$PROJECT_DIR$/pipeline-model-extensions/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/agent/DeclarativeAgent.java" />
+        <option value="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/JSONParser.groovy" />
+        <option value="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/validator/ModelValidatorImpl.groovy" />
+        <option value="$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/DescriptorLookupCache.java" />
+        <option value="$PROJECT_DIR$/pipeline-model-extensions/build.gradle" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/Test.java" />
+        <option value="$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/Test.groovy" />
+        <option value="$PROJECT_DIR$/pipeline-model-definition/build.gradle" />
+        <option value="$PROJECT_DIR$/pipeline-model-definition/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ModelConverter.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pipeline" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pipeline" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pipeline" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="pipeline-model-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pipeline" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="pipeline-model-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pipeline" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="pipeline-model-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pipeline" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="pipeline-model-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pipeline" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="pipeline-model-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pipeline" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="pipeline-model-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pipeline" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="pipeline-model-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="modeldefinition" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552300703411" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.54367816" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.jenkinsci.plugins.pipeline.modeldefinition" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pipeline-model-extensions/libs" />
+      <recent name="$PROJECT_DIR$/pipeline-model-extensions" />
+      <recent name="$PROJECT_DIR$/libs" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/pipeline-model-definition/src/main" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.pipeline:pipeline-model-api [jar]">
+    <configuration name="pipeline:pipeline-model-api [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="pipeline:pipeline-model-api [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="pipeline:pipeline-model-api [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/pipeline-model-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="pipeline:pipeline-model-extensions [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/pipeline-model-extensions" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="pipeline:pipeline-stage-tags-metadata [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/pipeline-stage-tags-metadata" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.pipeline:pipeline-model-api [buildDependents]" />
+      <item itemvalue="Gradle.pipeline:pipeline-model-api [build]" />
+      <item itemvalue="Gradle.pipeline:pipeline-model-extensions [build]" />
+      <item itemvalue="Gradle.pipeline:pipeline-stage-tags-metadata [build]" />
+      <item itemvalue="Gradle.pipeline:pipeline-model-api [jar]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.pipeline:pipeline-model-api [jar]" />
+        <item itemvalue="Gradle.pipeline:pipeline-stage-tags-metadata [build]" />
+        <item itemvalue="Gradle.pipeline:pipeline-model-extensions [build]" />
+        <item itemvalue="Gradle.pipeline:pipeline-model-api [build]" />
+        <item itemvalue="Gradle.pipeline:pipeline-model-api [buildDependents]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f6168f9-6130-46f3-a231-dc1eeb0373e1" name="Default Changelist" comment="" />
+      <created>1552015155458</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552015155458</updated>
+      <workItem from="1552015164390" duration="200000" />
+      <workItem from="1552015517718" duration="24377000" />
+      <workItem from="1552287148060" duration="5333000" />
+      <workItem from="1552354415240" duration="195000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="30105000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25575852" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3708029" />
+      <window_info anchor="bottom" id="Spring" order="1" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.34890512" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.3970803" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Build" order="9" weight="0.2080292" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.34671533" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32962668" />
+      <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.32962668" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/com/test/HelloGroovy.groovy" />
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/conditions/Fixed.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/IntelliJIdea2018.2/compile-server/pipeline_afe4e9d3/groovyStubs/pipeline-model-definition_main/java-production/org/jenkinsci/plugins/pipeline/model/definition/parser/JSONParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/IntelliJIdea2018.2/compile-server/pipeline_afe4e9d3/groovyStubs/pipeline-model-definition_main/java-production/org/jenkinsci/plugins/pipeline/model/definition/parser/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="219" selection-start-line="28" selection-start-column="219" selection-end-line="28" selection-end-column="219" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-extensions/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/when/ChangeLogStrategy.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/java/com/java/HelloWorld.java" />
+    <entry file="file://$PROJECT_DIR$/pipeline-stage-tags-metadata/src/main/java/org/jenkinsci/plugins/pipeline/StageStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/Agent.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/Stage.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/pipeline-model-extensions/libs/workflow-cps-2.61.1.jar!/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-cps/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/Converter.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="46" column="62" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-stage-tags-metadata/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-stage-tags-metadata/src/main/java/org/jenkinsci/plugins/pipeline/StageTagsMetadata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitigore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-extensions/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/parser/StepRuntimeTransformerContributor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="40" column="72" lean-forward="true" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-extensions/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/model/BuildCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/ModelASTPipelineDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-extensions/src/main/resources/org/jenkinsci/plugins/pipeline/modeldefinition/agent/CheckoutScript.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/cloudbees/groovy-cps/1.25/groovy-cps-1.25.jar!/com/cloudbees/groovy/cps/SerializableScript.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci.plugins.workflow/workflow-cps/2.61.1/3e2fe9b5cf39d083928dd5b15c62ff84acdb396c/workflow-cps-2.61.1-sources.jar!/org/jenkinsci/plugins/workflow/cps/CpsScript.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1450">
+          <caret line="70" column="38" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-extensions/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/withscript/WithScriptDescribable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-extensions/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/withscript/WithScriptScript.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-extensions/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/withscript/WithScriptDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="47" column="65" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-extensions/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/agent/DeclarativeAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-extensions/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/agent/DeclarativeAgentDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-extensions/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/when/DeclarativeStageConditionalDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="70" column="62" selection-start-line="70" selection-start-column="62" selection-end-line="70" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ModelStepLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/model/Options.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-extensions/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/ModelParser.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/ASTParserUtils.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="59" column="68" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/parser/JSONParser.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="98" column="38" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/Test.java" />
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/Test.groovy" />
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/validator/ModelValidatorImpl.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/Utils.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="107" column="6" selection-start-line="107" selection-start-column="6" selection-end-line="107" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-api/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ModelConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ast/AbstractModelASTCodeBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/ASTSchema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/validator/ModelValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-api/src/main/java/org/jenkinsci/plugins/pipeline/modeldefinition/DescriptorLookupCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/validator/JSONErrorCollector.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/validator/SourceUnitErrorCollector.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipeline-model-definition/src/main/groovy/org/jenkinsci/plugins/pipeline/modeldefinition/validator/ErrorCollector.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <element signature="e#66#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.54367816" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.54367816" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Bundled Protobuf Distribution</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.54367816" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.54367816" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>pipeline-model-api|pipeline-model-api</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.54367816" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: antlr:antlr:2.7.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.54367816" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

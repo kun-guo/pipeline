@@ -1,0 +1,6 @@
+rootProject.name = 'pipeline'
+
+include ':pipeline-model-api'
+include ':pipeline-model-definition'
+include ':pipeline-model-extensions'
+include ':pipeline-stage-tags-metadata'

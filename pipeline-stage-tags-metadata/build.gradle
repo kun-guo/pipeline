@@ -1,0 +1,7 @@
+
+description = 'Pipeline: Stage Tags Metadata'
+
+dependencies {
+    compile group: 'org.jenkins-ci.main', name: 'jenkins-core', version:'2.121.1'
+    compile group: 'org.jenkins-ci.plugins.workflow', name: 'workflow-api', version:'2.30'
+}
